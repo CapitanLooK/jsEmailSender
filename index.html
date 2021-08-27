@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Formulario de contacto smtp.js</title>
+</head>
+<body>
+    <div class="mb-5">
+        <h1 class="text-center text-capitalize">formulario de contacto</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <form id="formulario">
+            <div class="mb-4 col-12">
+                <label for="nombre" class="form-label text-capitalize">nombre </label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" class="form-control">
+            </div>
+            <div class="mb-4 col-12">
+                <label for="telefono" class="form-label text-capitalize">telefono </label>
+                <input type="number" id="telefono" placeholder="Ingrese su telefono" class="form-control">
+            </div>
+            <div class="mb-4 col-12">
+                <label for="email" class="form-label text-capitalize">email </label>
+                <input type="email" id="email" placeholder="Ingrese su Email" class="form-control">
+            </div>
+            <div class="mb-4 col-12">
+                <label for="mensaje" class="form-label text-capitalize">mensaje </label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deje aqui su mensaje" class="form-control"></textarea>
+            </div>
+            <div class="text-center">
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+
+<script src="smpt.js"></script>
+<script src="sender.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
